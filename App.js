@@ -1,16 +1,18 @@
 global.self = global;
-import ExpoTHREE, { THREE } from 'expo-three';
+
+import { THREE } from 'expo-three';
 import React from 'react';
+import { ScreenOrientation } from 'expo';
+import Example from './Example';
 
-import ImageExample from './Image';
-
-// import { View as GraphicsView, AR, GLView } from 'react-native';
+console.ignoredYellowBox = ['Module', 'Class'];
 export default class App extends React.Component {
-  componentWillMount() {
+  componentDidMount() {
+    ScreenOrientation.allow(ScreenOrientation.Orientation.ALL);
     THREE.suppressExpoWarnings();
   }
 
   render() {
-    return <ImageExample />;
+    return <Example />;
   }
 }

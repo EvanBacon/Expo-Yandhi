@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "three",
-    "description": "No description",
-    "slug": "snack-r1ndcRAOX",
-    "privacy": "unlisted",
+    "name": "Yandhi",
+    "description": "The Kanye West demo",
+    "slug": "yandhi",
+    "privacy": "public",
     "sdkVersion": "29.0.0",
     "version": "1.0.0",
     "orientation": "portrait",
